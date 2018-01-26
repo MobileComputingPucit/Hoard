@@ -24,6 +24,10 @@ public class LoginActivity extends AppCompatActivity {
         if(pass1.contentEquals(pass))
         {
             Toast.makeText(this, "Loged In!!!", Toast.LENGTH_SHORT).show();
+            Intent main=new Intent(this,MainActivity.class);
+            startActivity(main);
+            finish();
+
         }
         else
         {
@@ -42,6 +46,7 @@ public class LoginActivity extends AppCompatActivity {
         {
             Intent loginIntent=new Intent(this,SignupActivity.class);
             startActivity(loginIntent);
+            finish();
         }
 
 

@@ -26,6 +26,7 @@ public class SignupActivity extends AppCompatActivity {
             sp.edit().putString("email",email).apply();
             Intent loginIntent=new Intent(this,LoginActivity.class);
             startActivity(loginIntent);
+            finish();
 
         }
         else
